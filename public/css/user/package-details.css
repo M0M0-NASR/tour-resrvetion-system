@@ -1,0 +1,67 @@
+root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+.package {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  border: 1px solid black;
+}
+
+.col1 {
+  width: 30%;
+  text-align: center;
+}
+img {
+  width: 100%;
+  margin-left: 20px;
+  /* margin-top: 10px; */
+  border-radius: 10px;
+}
+.col2 {
+  width: 60%;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+form {
+  position: unset;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: unset;
+  border: unset;
+  border-radius: 5px;
+}
+.label * {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.data * {
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.book {
+  background: white;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+.book:hover {
+  background-color: var(--main-color);
+}

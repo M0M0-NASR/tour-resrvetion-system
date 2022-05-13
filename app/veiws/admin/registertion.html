@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register-login.css" />
+    <!-- <link rel="stylesheet" href="./CSS/all.min.css"> -->
+    <title>Registertion</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <i class="fa-solid fa-angles-down"></i>
+        <span>Join Us</span>
+        <p>Click About us to know more about our tour and have fun</p>
+        <button class="about-us">About Us</button>
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+      <form action="account.php" method="POST" class="registertion">
+        <h2>Register here</h3>
+        <input
+          type="text"
+          name="fname"
+          maxlength="15"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          name="mname"
+          maxlength="15"
+          placeholder="Middle Name"
+        />
+
+        <input
+          type="text"
+          name="lname"
+          maxlength="15"
+          placeholder="Last Name"
+        />
+
+        <input type="email" placeholder="Email" />
+
+        <input type="password" placeholder="Password" />
+
+        <button class="register" name="btnRegister">Register</button> 
+        <a href="login.php">have account?</a>
+      </form>
+    </div>
+  </body>
+</html>

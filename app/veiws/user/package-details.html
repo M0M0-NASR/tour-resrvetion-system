@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/user/package-details.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <!-- <img src="imgs/logo2.png" alt="" /> -->
+                <i class="fa fa-globe">%%</i>
+                <div>
+                    <h1>ITRS</h1>
+                    <sub>industrail tour reservation system </sub>
+                </div>
+            </div>
+            <a href="login-page">log out</a>
+        </header>
+        <div class="package">
+            <div class="col1">
+                <img src="../../imgs/company/c.jpg" alt="">
+                <span>company name</span>
+            </div>
+            <div class="col2">
+                <div class="grid-2">
+                    <div class="label">
+                        <h4>to:</h4>
+                        <h4>country:</h4>
+                        <h4>price for a person:</h4>
+                        <h4>date:</h4>
+                        <h4>stars:s</h4>
+                        <h4>No. Vistors</h4>
+                        <h4>total cost</h4>
+                    </div>
+                    <div class="data">
+                        <form action="pay.html">
+                            <input type="text" readonly disabled value="moo">
+                            <input  type="text" readonly value="company" disabled >
+                            <input class="cost" type="text" readonly value="5" disabled >
+                            <input type="date" readonly disabled value="2">
+                            <span># # # #</span>
+                            <input class="no-visitors" type="number" max="20" placeholder="less than 20">
+                            <input class="total-cost" type="text"  readonly>
+                            <input class="book" type="submit" value="Book">
+                        </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script src="../../js/tatal-cost.js"></script>
+</body>
+
+</html>

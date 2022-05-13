@@ -1,0 +1,36 @@
+:root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+
+.content .subject input,
+button {
+  background-color: var(--main-color);
+  /* width: 100%; */
+  margin: 5px;
+  padding: 10px 20px !important;
+  border-radius: 20px !important;
+  border: none;
+  cursor: pointer;
+  color: wheat;
+  position: relative;
+  font-size: 18px;
+  transition-duration: 300ms;
+}
+.subject input:hover {
+  background-color: black;
+}
+form {
+  margin: 0px !important;
+  background-color: unset !important;
+  border: unset !important;
+  display: inline;
+  /* border-radius: 20px; */
+}
+input {
+  cursor: pointer;
+  background-color: #ff5722;
+  color: wheat;
+}

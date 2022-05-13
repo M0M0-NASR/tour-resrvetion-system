@@ -1,0 +1,11 @@
+:root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+
+header .btns {
+  display: flex;
+  flex-wrap: wrap;
+}

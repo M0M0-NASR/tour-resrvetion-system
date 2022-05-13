@@ -1,0 +1,221 @@
+:root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #ff5722 50%, #ff9800);
+}
+.container {
+  position: relative;
+  top: 10%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 762px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 991.98px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1199.98px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.registertion .register,
+.intro .about-us {
+  width: fit-content;
+  border-radius: 40px;
+  border: none;
+  /* margin: 20px auto; */
+  padding: 10px 40px;
+}
+
+/* start intro */
+.intro,
+.registertion,
+.login {
+  width: 35%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+}
+.intro * {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 40px;
+}
+.intro p {
+  font-size: large;
+  color: darkgrey;
+}
+
+.intro i {
+  color: whitesmoke;
+  animation-name: up-down;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  font-size: 70px;
+  font-weight: bolder;
+}
+.intro i:last-child {
+  animation-name: down-up;
+}
+
+.intro .about-us {
+  color: var(--h2-color);
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes down-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+/* end intro */
+
+/* start Registration */
+.registertion {
+  background-color: var(--backround-color);
+  padding: 60px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+
+.registertion::after {
+  content: "";
+  background-color: var(--backround-color);
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 20%;
+  border-radius: 0 50% 50% 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.registertion *,
+.login * {
+  font-size: large;
+  padding: 10px;
+  margin-top: 15px;
+}
+.registertion h2 {
+  font-size: 30px;
+  margin-top: -50px;
+  text-align: center;
+  color: var(--h2-color);
+}
+
+.registertion .register {
+  background-color: var(--main-color);
+  color: wheat;
+}
+
+.registertion a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 15px;
+}
+
+@media (max-width: 765px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro,
+  .registertion,
+  .login {
+    min-width: 70%;
+    display: flex;
+    place-items: center;
+  }
+  .registertion::after {
+    display: none;
+  }
+}
+
+/* end registertion */
+
+/* strat login */
+.login {
+  place-items: center;
+  gap: 20px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+.login * {
+  margin-top: 0;
+  width: 80%;
+}
+.login input {
+  border-radius: 10px;
+  width: 80%;
+  border-width: 1px;
+  border-color: white;
+}
+.login input:focus {
+  /* border: none; */
+  outline: none;
+  border-bottom: 2px solid var(--main-color);
+}
+.login h2 {
+  font-size: 40px;
+  color: var(--h2-color);
+  text-align: center;
+}
+
+.login button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  width: 49%;
+  border-radius: 20px;
+}
+
+/* end login */

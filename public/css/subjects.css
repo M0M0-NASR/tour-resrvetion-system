@@ -1,0 +1,67 @@
+:root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+
+.content {
+  margin: 20px auto;
+  width: 70%;
+}
+form {
+  width: 40%;
+  margin: 20px 0;
+}
+.subjects,
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+span,
+button {
+  background-color: var(--main-color);
+  /* width: 100%; */
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: wheat;
+  position: relative;
+  transition-duration: 300ms;
+}
+button:hover,
+.subjects > span:hover {
+  background-color: black;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+span::after {
+  content: "";
+}
+.delete {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  background-color: #777;
+  z-index: 10;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: white;
+}
+.btns button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* width: 49%; */
+  border-radius: 20px;
+  cursor: pointer;
+}
