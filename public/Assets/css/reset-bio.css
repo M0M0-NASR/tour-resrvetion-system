@@ -1,0 +1,43 @@
+:root {
+  --main-color: #ff5722;
+  --h2-color: rgba(0, 0, 0, 0.7);
+  --input-color: rgb(224, 222, 222);
+  --backround-color: #f1f1f1;
+}
+
+.info {
+  padding: 50px;
+  position: relative;
+  width: 80%;
+}
+form {
+  width: fit-content;
+  position: unset;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  background-color: #ff5722;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+.labels,
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+label {
+  padding: 10px;
+  border-radius: 5px;
+  border: unset;
+  font-weight: bold;
+}
+.inputs {
+  margin-top: 6px;
+}
+
+.btns input {
+  width: 48%;
+  /* padding: 10px 40px; */
+}
